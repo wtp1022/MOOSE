@@ -28,6 +28,7 @@ MooseApp::~MooseApp()
 {
 }
 
+extern "C" void MooseApp__registerApps() { MooseApp::registerApps(); }
 void
 MooseApp::registerApps()
 {
